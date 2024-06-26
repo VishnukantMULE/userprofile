@@ -1,6 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:userprofile/screens/profile/create_profile.dart';
+import 'package:userprofile/screens/profile/create/create_profile_controller.dart';
 
 class UserProfile extends StatefulWidget {
   final String firstname;
@@ -31,7 +31,7 @@ class _UserProfileState extends State<UserProfile> {
           onPressed: () {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => const CreateProfile()),
+              MaterialPageRoute(builder: (context) =>  ProfileController()),
             );
           },
           icon: const Icon(Icons.arrow_back_sharp),
